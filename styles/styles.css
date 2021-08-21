@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-size: 100% 45%;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 95%);
+}
+
+.order_summary {
+    display: flex;
+    max-width: 33.5rem;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.order_summary-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: white;
+    text-align: center;
+}
+
+.order_summary-main--title {
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.order_summary-main--description {
+    font-size: 1.6rem;
+    margin: 2rem 0 2.5rem 0;
+    padding: 0 10px;
+    line-height: 1.7;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.order_summary-main--plan {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2.5rem;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.order_summary-main--plan img {
+    margin-right: 2rem;
+}
+
+.order_summary-main--plan a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.order_summary-main--plan a:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 66%);
+}
+
+.order_summary-main--plan-resume {
+    font-weight: 900;
+    line-height: 1.5;
+    text-align: left;
+    margin-right: auto;
+}
+
+.order_summary-main--plan-type {
+    font-size: 1.4rem;
+    letter-spacing: -0.2px;
+    color: hsl(223, 47%, 23%);
+}
+
+.order_summary-main--plan-price {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.order_summary-main-confirm {
+    color: white;
+    align-self: stretch;
+    padding: 1.6rem 0;
+    border-radius: 1.2rem;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    background-color: hsl(245, 75%, 52%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.order_summary-main-confirm:hover {
+    background-color: hsl(245, 75%, 66%);
+}
+
+.order_summary-main-cancel {
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.order_summary-main-cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 320px) {
+    * {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        background-image: url('../images/pattern-background-mobile.svg');
+        background-size: 100% 35%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+ * {
+     font-size: 12px;
+ }
+
+ .order_summary-main--description {
+    font-size: 1.7rem;
+ }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
