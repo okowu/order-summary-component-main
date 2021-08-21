@@ -150,6 +150,10 @@ body {
      font-size: 12px;
  }
 
+ .order_summary {
+     max-width: 40rem;
+ }
+
  .order_summary-main--description {
     font-size: 1.7rem;
  }
